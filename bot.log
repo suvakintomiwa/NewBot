@@ -1,0 +1,8 @@
+2026-05-27 17:23:57.312 | INFO     | __main__:main:14 - Starting Web3 Jarvis Bot...
+2026-05-27 17:23:57.372 | INFO     | database.db:init_db:65 - Database tables created
+2026-05-27 17:23:57.372 | INFO     | __main__:main:16 - Database initialized
+2026-05-27 17:23:57.774 | INFO     | services.scheduler:start_scheduler:23 - Scheduler started
+2026-05-27 17:30:51.916 | INFO     | __main__:main:14 - Starting Web3 Jarvis Bot...
+2026-05-27 17:30:51.979 | INFO     | database.db:init_db:65 - Database tables created
+2026-05-27 17:30:51.979 | INFO     | __main__:main:16 - Database initialized
+2026-05-27 17:30:52.386 | INFO     | services.scheduler:start_scheduler:23 - Scheduler started
