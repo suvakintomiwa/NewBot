@@ -59,6 +59,13 @@ def init_db():
             url TEXT,
             discovered_at DATETIME DEFAULT CURRENT_TIMESTAMP
         );
+        CREATE TABLE IF NOT EXISTS seen_projects (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            address TEXT UNIQUE NOT NULL,
+            chain TEXT,
+            first_seen DATETIME DEFAULT CURRENT_TIMESTAMP
+        );
+        CREATE INDEX IF NOT EXISTS idx_seen_address ON seen_projects(address);
     ''')
     conn.commit()
     conn.close()
