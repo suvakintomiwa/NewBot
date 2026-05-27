@@ -66,6 +66,12 @@ def init_db():
             first_seen DATETIME DEFAULT CURRENT_TIMESTAMP
         );
         CREATE INDEX IF NOT EXISTS idx_seen_address ON seen_projects(address);
+        CREATE TABLE IF NOT EXISTS seen_tweets (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            tweet_id TEXT UNIQUE NOT NULL,
+            first_seen DATETIME DEFAULT CURRENT_TIMESTAMP
+        );
+        CREATE INDEX IF NOT EXISTS idx_seen_tweet ON seen_tweets(tweet_id);
     ''')
     conn.commit()
     conn.close()
